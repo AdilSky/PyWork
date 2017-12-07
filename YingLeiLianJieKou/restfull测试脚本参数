@@ -1,0 +1,18 @@
+1.item/query
+python itemquery.py --appId=ggdfFRnf4UsuQfgAAk9nAA== --data='{"supplierSn":"748307065314700","itemOuterId":"10200009","outUserId":"DWI00006671"}' --appKey=zXKoeppLgNL3Ii0vbibs2g==
+
+--appId=ggdfFRnf4UsuQfgAAk9nAA== --data='{\"supplierSn\":\"748307065314700\",\"itemOuterId\":\"10200009\",\"outUserId\":\"DWI00006671\"}' --appKey=zXKoeppLgNL3Ii0vbibs2g==
+
+
+
+2.order/query
+python orderquery.py --appId=ggdfFRnf4UsuQfgAAk9nAA== --data='{"supplierSn":"748307065314700","orderStatus":22,"pageSize":20,"pageNo":1,"timeStamp":1506395161266}' --appKey=zXKoeppLgNL3Ii0vbibs2g==
+
+3.order/detail/query
+python orderdetailquery.py --appId=ggdfFRnf4UsuQfgAAk9nAA== --data='{"outOrderSn":"testordersn2","needItemList":true,"needDeliveryList":true,"timeStamp":1506480062538}' --appKey=zXKoeppLgNL3Ii0vbibs2g==
+
+4.order/delivery/query
+python orderdeliveryquery.py --appId=ggdfFRnf4UsuQfgAAk9nAA== --data='{"receiptNum":"receiptnumtest","timeStamp":1506481517211}' --appKey=zXKoeppLgNL3Ii0vbibs2g==
+
+5.order/commit
+订单提交接口参数有点复杂，用jut进行测试
