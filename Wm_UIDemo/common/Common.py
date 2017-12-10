@@ -68,7 +68,8 @@ class Common(object):
         upList = kwargs['upList']
         # 获取excel的局对路径
         self.xlsPath = os.path.join(self.dataPath,xlsName)
-        # 使用openpyxl 的load_workbook 打开excel
+        # 使用openpyxl 的load_workbook 打开excel，这样是追加写入
+        # WorkBook() 是清空写入。
         self.Rb = load_workbook(self.xlsPath)
         # 使用get_sheet_by_name 获取指定sheet页
         self.Rs = self.Rb.get_sheet_by_name(sheetName)
